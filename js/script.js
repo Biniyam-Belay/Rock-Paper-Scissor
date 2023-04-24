@@ -1,36 +1,56 @@
-let paper;
-let rock;
 let computer = 0;
 let player = 0;
-function getcomputerChoice (){
-  const elements = ["Rock", "Paper", "Scissor"];
-  const random = Math.floor(Math.random() * elements.length);
 
-  return elements[random];
+const word = ["rock", "paper", "scissor"];
+
+// A function that generates computerSelection randomly.
+function getcomputerChoice() {
+  const randomIndex = Math.floor(Math.random() * word.length);
+  computerSelection = word[randomIndex];
+  return computerSelection;
 }
 
-function playround(playerSelection, computerselection){
-   if(playerSelection === game){
-       computer += 1;
-   }else if(computerselection === game){
-       player += 1;
-   }
-   
-   if(computer >= 3){
-       console.log("Compuetr won the game.")
-   }else if(player >= 3){
-       console.log("you won the game")
-   }
+// A function to accept player and computer Selection five times.
+function game() {
+  for (i = 1; i <= 5; i++) {
+    // Gets the copmputerChoice.
+    computerSelection = getcomputerChoice();
+    computerSelection = computerSelection.toLowerCase();
+
+    // generates random from the array.
+    function random() {
+      const randomIndex = Math.floor(Math.random() * word.length);
+      ranWord = word[randomIndex];
+      return ranWord;
+    }
+
+    // takes the player selection.
+    playerSelection = prompt("Select rock, paper or scissor.");
+    playerSelection = playerSelection.toLowerCase();
+  }
 }
 
-function game(){
-   for (i=1; i <= 5; i++ ){
-       console.log(playround());
-   }
-   
-}
+/* A function that takes the player and the computer selection. 
+    check the scores for the player and the computer
+*/
+function playround(playerSelection, computerSelection) {
+  // Calls for the game function
+  game();
 
-const playerSelection = prompt("select rock, paper, or scissor");
-const computerselection = getcomputerChoice();
-game()
-console.log(playround(playerSelection, computerselection));
+    // checks the score.
+  if (playerSelection === ranWord) {
+    player += 1;
+    console.log(`Player : ${player}`);
+  } else if (computerSelection === ranWord) {
+    computer += 1;
+    console.log(`Computer : ${computer}`);
+  } else if (playerSelection === computerSelection)
+  console.log(`Tie game!`);
+
+//   determines the winner.
+  if (computer > player) {
+    console.log("You've lost the game.");
+  } else 
+    console.log("You've won the game");
+}
+playround();
