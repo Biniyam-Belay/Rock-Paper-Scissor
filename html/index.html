@@ -1,121 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
 </head>
-
 <body>
-  <section class="hero">
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Welcome to My Portfolio</h1>
-          <p class="tagline">Discover my skills and projects</p>
-          <a href="#contact" class="btn">Get In Touch</a>
-        </div>
-        <div class="profile-photo">
-          <img src="https://th.bing.com/th/id/OIP.w_uwdHzGX8QiR0DAUJNrrAHaHe?pid=ImgDet&w=625&h=631&rs=1" alt="Profile Photo">
-        </div>
-      </div>
+        <h1>Rock Paper Scissors</h1>
+        <button onclick="playGame()">Play Game</button>
+        <div id="result"></div>
     </div>
-  </section>
-
-  <section class="section-skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-list">
-        <div class="skill" data-progress="90">
-          <h3 class="skill-name">HTML/CSS</h3>
-          <div class="skill-progress">
-            <div class="progress-bar html-css"></div>
-          </div>
-        </div>
-        <div class="skill" data-progress="80">
-          <h3 class="skill-name">JavaScript</h3>
-          <div class="skill-progress">
-            <div class="progress-bar javascript"></div>
-          </div>
-        </div>
-        <div class="skill" data-progress="70">
-          <h3 class="skill-name">Python</h3>
-          <div class="skill-progress">
-            <div class="progress-bar python"></div>
-          </div>
-        </div>
-        <div class="skill" data-progress="75">
-          <h3 class="skill-name">ReactJS</h3>
-          <div class="skill-progress">
-            <div class="progress-bar reactjs"></div>
-          </div>
-        </div>
-        <div class="skill" data-progress="85">
-          <h3 class="skill-name">Node.js</h3>
-          <div class="skill-progress">
-            <div class="progress-bar nodejs"></div>
-          </div>
-        </div>
-        <div class="skill" data-progress="65">
-          <h3 class="skill-name">Django</h3>
-          <div class="skill-progress">
-            <div class="progress-bar django"></div>
-          </div>
-        </div>
-        <!-- Add more skills here -->
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section-contact">
-    <div class="container">
-      <div class="card contact-card">
-        <div class="card-body">
-          <h2 class="card-title">Get in Touch</h2>
-          <p class="card-text">Have a project in mind or want to collaborate? Feel free to reach out to me. I'm always looking for new opportunities!</p>
-          <form class="contact-form">
-            <input type="text" class="form-control" placeholder="Your Name" required>
-            <input type="email" class="form-control" placeholder="Your Email" required>
-            <textarea class="form-control" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3 class="footer-title">About Me</h3>
-        <p class="footer-description">I am a web developer passionate about creating amazing websites and web applications.</p>
-      </div>
-      <div class="footer-section">
-        <h3 class="footer-title">Contact</h3>
-        <p class="footer-description">Email: example@example.com</p>
-        <p class="footer-description">Phone: +1234567890</p>
-      </div>
-      <div class="footer-section">
-        <h3 class="footer-title">Follow Me</h3>
-        <div class="social-links">
-          <a href="#" class="social-link"><img src="https://th.bing.com/th/id/R.6ec7c7ef771ffe51c7c046d23632a5c6?rik=WOY0KsILG8G6XA&pid=ImgRaw&r=0" alt="Facebook"></a>
-          <a href="#" class="social-link"><img src="https://th.bing.com/th/id/R.1c840f72c19c5f7c69891c6cebfdd3c3?rik=cZC%2bbjOz5idtgg&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Twitter"></a>
-          <a href="#" class="social-link"><img src="https://th.bing.com/th/id/R.7d369fb78ad668867000c0d987a1b70d?rik=q7o4M8DupvOwTQ&riu=http%3a%2f%2fbbandoflowers.org.uk%2fwp-content%2fuploads%2f2019%2f02%2fInstagram-Logo.png&ehk=0JUPs74NXWejIoMbm2HaLTB0H8a62vkaRUmSTfC%2fDJ4%3d&risl=&pid=ImgRaw&r=0" alt="Instagram"></a>
-          <a href="#" class="social-link"><img src="https://img.jillkonrath.com/hs-fs/hub/110248/file-1728796908-png/Blog_Images/LinkedIn_logo.png" alt="LinkedIn"></a>
-        </div>
-      </div>
-    </div>
-    <p class="footer-text">© 2023 My Portfolio. All rights reserved.</p>
-  </div>
-</footer>
-
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
